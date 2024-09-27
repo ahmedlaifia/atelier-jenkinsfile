@@ -30,7 +30,7 @@ pipeline {
 
         stage('Code Build') {
             steps {
-                sh 'mvn install -Dmaven.test.skip=true'
+               sh 'mvn clean package -e -X'
             }
         }
     }
