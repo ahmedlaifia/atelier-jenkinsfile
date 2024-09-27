@@ -23,7 +23,7 @@ pipeline {
     stages {
         stage('Code Checkout') {
             steps {
-                git branch: 'master', 
+                git branch: 'main', 
                     url: 'https://github.com/ahmedlaifia/atelier-jenkinsfile.git'
             }
         }
